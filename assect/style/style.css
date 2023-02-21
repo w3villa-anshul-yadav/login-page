@@ -44,6 +44,9 @@ hero section
     .background-image-container{
         width: 0;
     }
+    .login-container{
+        padding-top: 150px;
+    }
 }
 
 .heading {
@@ -78,7 +81,7 @@ hero section
 #user-name:focus,
 #password:focus {
     transition: .4s ease;
-    box-shadow: 1px 2px 3px -1px rgb(4, 4, 235);
+    box-shadow: 1px 2px 4px -1px rgb(4, 4, 235);
 
 }
 
