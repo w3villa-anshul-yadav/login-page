@@ -40,6 +40,11 @@ hero section
         width: 35vw;
     }
 }
+@media screen and (max-width:610px) {
+    .background-image-container{
+        width: 0;
+    }
+}
 
 .heading {
     display: inline-block;
