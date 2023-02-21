@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+/* ***********************
+hero section
+*********************** */
+.hero {
+    display: flex;
+
+}
+
+.background-image-container {
+    background-image: url("background.jpg");
+    width: 68%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+
+}
+
+.login-container {
+    height: 100vh;
+
+    width: 620px;
+    background-color: #FFFFFe;
+    padding-top: 8%;
+    padding-left: 5%;
+    box-shadow: -1px -18px 10px 2px gray;
+    padding-right: 5%;
+}
+
+@media screen and (max-width:960px) {
+    .background-image-container {
+        width: 35vw;
+    }
+}
+
+.heading {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 38px;
+    color: #6a6767;
+    position: relative;
+    left: 33%;
+}
+
+::placeholder {
+    color: blue;
+}
+
+#user-name,
+#password {
+    margin: 13px 0;
+    width: 100%;
+    padding: 2px 15px 2px 40px;
+    outline: none;
+    border: none;
+    background-color: #f3f1f1;
+    color: blue;
+    font-size: 19px;
+    height: 57px;
+    border-radius: 28px;
+    box-shadow: 0px 1px 3px -1px rgb(67, 67, 238);
+}
+
+#user-name:focus,
+#password:focus {
+    transition: .4s ease;
+    box-shadow: 1px 2px 3px -1px rgb(4, 4, 235);
+
+}
+
+.user-name,
+.password {
+    position: relative;
+    padding: 0;
+}
+
+.login-container .user-name i,
+.password i {
+    font-size: 22px;
+    position: absolute;
+    opacity: 70%;
+    top: 36%;
+    left: 3%;
+}
+
+#login {
+    width: 100%;
+    margin-top: 20px;
+ 
+    outline: none;
+    border: none;
+    background-color: #6a6767;
+
+    font-size: 20px;
+    height: 55px;
+    color: #fff;
+    border-radius: 28px;
+    box-shadow: 0px 1px 3px -1px grey;
+}
+
+#login:hover {
+    transform: scale(1.01);
+    color: white;
+    background-color: #3737f3;
+    transition: .5s ease;
+    box-shadow: 1px 2px 3px -2px grey;
+}
+
+.light-text {
+    text-align: center;
+    position: relative;
+    opacity: 70%;
+    margin-top: 15px;
+}
+
+
+
+#forgot-password {
+    left: 30%;
+     top:4px;
+    
+}
+#forgot-password:hover {
+    color: red;
+    opacity: 99%;
+}
+
+.login-container a {
+    opacity: 70%;
+    font-size: 18px;
+
+    text-decoration: none;
+    color: #000;
+}
+
+
+.login-with-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 5px 15px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.login-with-container i {
+    font-size: 50px;
+    color: rgb(3, 3, 235);
+}
+
+.login-with-container i:hover {
+    transform: scale(1.3);
+    color: #ff3c00;
+    transition: .4s ease;
+}
